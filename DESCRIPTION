@@ -5,7 +5,7 @@ Version: 1.0.0
 Date: 2018-12-14
 Author: Ruixuan Zhou, Liewei Wang, Sihai Dave Zhao
 Maintainer: Ruixuan Zhou <rzhou14@illinois.edu>
-Depends: R (>= 2.15.0), flare_rev, scalreg
+Depends: R (>= 2.15.0), flarerev, scalreg
 Description: aaa
 License: GPL-2
 NeedsCompilation: no
