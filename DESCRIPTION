@@ -1,8 +1,7 @@
 Package: ihmm
 Title: Estimation and Inference for High Dimensional Median Analysis
 Version: 0.0.17
-Authors@R: c(
-    person("Rachel", "Zhou", email = "rzhou14@illinois.edu", role = c("aut", "cre", "cph")),
+Authors@R: c(person("Rachel", "Zhou", email = "rzhou14@illinois.edu", role = c("aut", "cre", "cph")),
     person("Dave", "Zhao", email = "netidhere@illinois.edu", role = c("aut", "cph")))
 Description: Amazing statistical computations are being undertaken.
 Depends: R (>= 3.5.0)
