@@ -2,18 +2,35 @@
 % Please edit documentation in R/ihmm.R
 \name{ihmm}
 \alias{ihmm}
-\title{A Cat Function}
+\title{Estimation and Inference for High Dimensional Median Analysis}
 \usage{
 ihmm(Y, G, S, mediation_setting = "incomplete", tuning_method = "aic",
   lam_list = NA, min.ratio = 0.1, n.lambda = 5, center = TRUE)
 }
 \arguments{
-\item{love}{Do you love cats? Defaults to TRUE.}
+\item{Y}{Place your description here...}
+
+\item{G}{Place your description here...}
+
+\item{S}{Place your description here...}
+
+\item{mediation_setting}{Place your description here...}
+
+\item{tuning_method}{Place your description here...}
+
+\item{lam_list}{Place your description here...}
+
+\item{min.ratio}{Place your description here...}
+
+\item{n.lambda}{Place your description here...}
+
+\item{center}{Place your description here...}
 }
 \description{
-This function allows you to express your love of cats.
+Amazing statistical computations are being undertaken.
 }
 \examples{
-cat_function()
+## Example to be added here
+
+# c.f. test_data.R file
 }
-\keyword{cats}

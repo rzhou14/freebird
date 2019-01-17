@@ -1,12 +1,13 @@
 Package: ihmm
-Title: What the Package Does (one line, title case)
+Title: Estimation and Inference for High Dimensional Median Analysis
 Version: 0.0.17
 Authors@R: c(
     person("Rachel", "Zhou", email = "rzhou14@illinois.edu", role = c("aut", "cre", "cph")),
     person("Dave", "Zhao", email = "netidhere@illinois.edu", role = c("aut", "cph")))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.5.1)
-License: What license is it under?
+Description: Amazing statistical computations are being undertaken.
+Depends: R (>= 3.5.0)
+Imports: stats, scalreg
+License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.0.9000
+RoxygenNote: 6.1.1
