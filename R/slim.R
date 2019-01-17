@@ -172,6 +172,6 @@ slim <- function(X,
   est$verbose = verbose
   est$runtime = runt
   class(est) = "slim"
-  if(verbose) print(est)
+  #if(verbose) print(est)
   return(est)
 }
