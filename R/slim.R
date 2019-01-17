@@ -85,33 +85,7 @@ slim <- function(X,
         #lambda.max = max(abs(crossprod(xx,yy/n)))
         lambda.max = max(abs(yy/n))
     }
-    if(method=="lq"){
-      if(q==2){
-        if(intercept)
-          lambda.max = max(abs(crossprod(xx[,2:d],yy/sqrt(sum(yy^2))/sqrt(n))))
-        else
-          lambda.max = max(abs(crossprod(xx,yy/sqrt(sum(yy^2))/sqrt(n))))
-      }else{
-        if(q==1){
-          if(intercept)
-            lambda.max = max(abs(crossprod(xx[,2:d],sign(yy)/n)))
-          else
-            lambda.max = max(abs(crossprod(xx,sign(yy)/n)))
-        }else{
-          if(intercept){
-            lambda.max = max(abs(crossprod(xx[,2:d],sign(yy)*(abs(yy)^(q-1))/(sum(abs(yy)^q)^((q-1)/q))/n^(1/q))))# 1<=q<=2
-          }else{
-            lambda.max = max(abs(crossprod(xx,sign(yy)*(abs(yy)^(q-1))/(sum(abs(yy)^q)^((q-1)/q))/n^(1/q)))) # 1<=q<=2
-          }
-        }
-      }
-    }
-    if(method=="lasso"){
-      if(intercept)
-        lambda.max = max(abs(crossprod(xx[,2:d],yy/n)))
-      else
-        lambda.max = max(abs(crossprod(xx,yy/n)))
-    }
+
     if(method=="dantzig"){
       if(is.null(lambda.min.ratio)){
         lambda.min.ratio = 0.5
@@ -150,16 +124,7 @@ slim <- function(X,
       out = slim.dantzig.ladm.scr2(yy_run, xx, lambda, nlambda, n, d, maxdf, rho, max.ite, prec, intercept, verbose)
     q = "infty"
   }
-  if(method=="lq") {#  && q!=2 && q!="lasso"
-    if(q==1) # lad lasso
-      out = slim.lad.ladm.scr.btr(yy, xx, lambda, nlambda, n, d, maxdf, rho, max.ite, prec, intercept, verbose)
-    if(q==2) # sqrt lasso
-      out = slim.sqrt.ladm.scr(yy, xx, lambda, nlambda, n, d, maxdf, rho, max.ite, prec, intercept, verbose)
-    if(q>1 && q<2) # lq lasso
-      out = slim.lq.ladm.scr.btr(yy, xx, q, lambda, nlambda, n, d, maxdf, rho, max.ite, prec, intercept, verbose)
-  }
-  if(method=="lasso")
-    out = slim.lasso.ladm.scr(yy, xx, lambda, nlambda, n, d, maxdf, max.ite, prec, intercept, verbose)
+
   runt=Sys.time()-begt
 
   df=rep(0,nlambda)
