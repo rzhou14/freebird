@@ -17,7 +17,9 @@
 #' @importFrom scalreg scalreg
 #' @importFrom stats lm pnorm
 #' @examples
-#' cat_function()
+#' ## Example to be added here
+#'
+#' # c.f. test_data.R file
 ihmm <- function(Y, G, S, mediation_setting = 'incomplete', tuning_method = 'aic', lam_list = NA,
                        min.ratio = 0.1, n.lambda = 5, center = TRUE) {
 

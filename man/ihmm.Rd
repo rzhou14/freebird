@@ -30,5 +30,7 @@ ihmm(Y, G, S, mediation_setting = "incomplete", tuning_method = "aic",
 Amazing statistical computations are being undertaken.
 }
 \examples{
-cat_function()
+## Example to be added here
+
+# c.f. test_data.R file
 }
