@@ -15,7 +15,7 @@
 #' @export
 #'
 #' @importFrom scalreg scalreg
-#' @importFrom scalreg lars
+#' @importFrom lars lars
 #' @importFrom stats lm pnorm
 #' @examples
 #' ## Example to be added here
