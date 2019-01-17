@@ -31,6 +31,5 @@ Amazing statistical computations are being undertaken.
 }
 \examples{
 ## Example to be added here
-
 # c.f. test_data.R file
 }
