@@ -1,3 +1,4 @@
 ^\.travis\.yml$
-^ihmm17\.Rproj$
+^ihmm\.Rproj$
 ^\.Rproj\.user$
+^LICENSE$
