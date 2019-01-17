@@ -2,8 +2,8 @@
 % Please edit documentation in R/ihmm-package.R
 \docType{package}
 \name{ihmm-package}
-\alias{ihmm}
 \alias{ihmm-package}
+\alias{_PACKAGE}
 \title{ihmm: Estimation and Inference for High Dimensional Median Analysis}
 \description{
 Amazing statistical computations are being undertaken.
