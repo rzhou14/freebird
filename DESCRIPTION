@@ -1,11 +1,12 @@
 Package: ihmm
-Type: Package
-Title: Inference for High-dimensional Mediation Models
-Version: 1.0.0
-Date: 2018-12-14
-Author: Ruixuan Zhou, Liewei Wang, Sihai Dave Zhao
-Maintainer: Ruixuan Zhou <rzhou14@illinois.edu>
-Depends: R (>= 2.15.0), flareihmm, scalreg
-Description: aaa
-License: GPL-2
-NeedsCompilation: no
+Title: What the Package Does (one line, title case)
+Version: 0.0.17
+Authors@R: c(
+    person("Rachel", "Zhou", email = "rzhou14@illinois.edu", role = c("aut", "cre", "cph")),
+    person("Dave", "Zhao", email = "netidhere@illinois.edu", role = c("aut", "cph")))
+Description: What the package does (one paragraph).
+Depends: R (>= 3.5.1)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0.9000

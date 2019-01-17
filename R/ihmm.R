@@ -1,4 +1,11 @@
-
+#' A Cat Function
+#'
+#' This function allows you to express your love of cats.
+#' @param love Do you love cats? Defaults to TRUE.
+#' @keywords cats
+#' @export
+#' @examples
+#' cat_function()
 ihmm <- function(Y, G, S, mediation_setting = 'incomplete', tuning_method = 'aic', lam_list = NA, 
                        min.ratio = 0.1, n.lambda = 5, center = TRUE) {
   
