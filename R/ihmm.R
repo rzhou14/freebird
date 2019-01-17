@@ -15,11 +15,24 @@
 #' @export
 #'
 #' @importFrom lars lars
+#' @importFrom scalreg lars
 #' @importFrom scalreg scalreg
 #' @importFrom stats lm pnorm
 #' @examples
 #' ## Example to be added here
-#'
+#'library(MASS)
+#library(flare)
+rm(list=ls())
+n=30
+p=50
+q=2
+G = mvrnorm(n, rep(0,p), diag(p))
+S = as.matrix(mvrnorm(n, rep(0,q), diag(q)))
+Y = as.matrix(rnorm(n))
+
+out = ihmm(Y,G,S, mediation_setting = 'complete', tuning_method = 'uniform', lam_list = 0.2)
+out = ihmm(Y,G,S, mediation_setting = 'incomplete')
+
 #' # c.f. test_data.R file
 ihmm <- function(Y, G, S, mediation_setting = 'incomplete', tuning_method = 'aic', lam_list = NA,
                        min.ratio = 0.1, n.lambda = 5, center = TRUE) {
