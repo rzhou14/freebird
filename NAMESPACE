@@ -2,3 +2,4 @@
 
 export(ihmm)
 export(summm)
+useDynLib(ihmm, .registration = TRUE)
