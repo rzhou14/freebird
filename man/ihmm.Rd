@@ -8,7 +8,23 @@ ihmm(Y, G, S, mediation_setting = "incomplete", tuning_method = "aic",
   lam_list = NA, min.ratio = 0.1, n.lambda = 5, center = TRUE)
 }
 \arguments{
-\item{love}{Do you love cats? Defaults to TRUE.}
+\item{Y}{Place your description here...}
+
+\item{G}{Place your description here...}
+
+\item{S}{Place your description here...}
+
+\item{mediation_setting}{Place your description here...}
+
+\item{tuning_method}{Place your description here...}
+
+\item{lam_list}{Place your description here...}
+
+\item{min.ratio}{Place your description here...}
+
+\item{n.lambda}{Place your description here...}
+
+\item{center}{Place your description here...}
 }
 \description{
 Amazing statistical computations are being undertaken.
