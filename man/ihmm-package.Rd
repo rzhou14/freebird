@@ -6,14 +6,5 @@
 \alias{_PACKAGE}
 \title{ihmm: Estimation and Inference for High Dimensional Median Analysis}
 \description{
-Amazing statistical computations are being undertaken.
-}
-\author{
-\strong{Maintainer}: Rachel Zhou \email{rzhou14@illinois.edu} [copyright holder]
-
-Authors:
-\itemize{
-  \item Dave Zhao \email{netidhere@illinois.edu} [copyright holder]
-}
-
+Estimation and Inference for High Dimensional Median Analysis.
 }
