@@ -6,7 +6,7 @@ Authors@R: c(
     person("Dave", "Zhao", email = "netidhere@illinois.edu", role = c("aut", "cph")))
 Description: Amazing statistical computations are being undertaken.
 Depends: R (>= 3.5.0)
-Imports: stats, scalreg
+Imports: stats, scalreg, lars
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true

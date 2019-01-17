@@ -4,7 +4,7 @@
 #'
 #' @param Y The n-dimensional outcome vector.
 #' @param G The n by p mediator matrix. p can be larger than n.
-#' @param S The n by q exposure matrix. q can be 1, and q \leq n is required.
+#' @param S The n by q exposure matrix. q can be 1, and q < n is required.
 #' @param mediation_setting Place your description here...
 #' @param tuning_method  Place your description here...
 #' @param lam_list Place your description here...
@@ -15,6 +15,7 @@
 #' @export
 #'
 #' @importFrom scalreg scalreg
+#' @importFrom lars lars
 #' @importFrom stats lm pnorm
 #' @examples
 #' ## Example to be added here

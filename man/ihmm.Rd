@@ -8,11 +8,11 @@ ihmm(Y, G, S, mediation_setting = "incomplete", tuning_method = "aic",
   lam_list = NA, min.ratio = 0.1, n.lambda = 5, center = TRUE)
 }
 \arguments{
-\item{Y}{Place your description here...}
+\item{Y}{The n-dimensional outcome vector.}
 
-\item{G}{Place your description here...}
+\item{G}{The n by p mediator matrix. p can be larger than n.}
 
-\item{S}{Place your description here...}
+\item{S}{The n by q exposure matrix. q can be 1, and q < n is required.}
 
 \item{mediation_setting}{Place your description here...}
 
