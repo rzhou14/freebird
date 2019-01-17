@@ -7,7 +7,7 @@ Authors@R: c(
     person("Dave", "Zhao", email = "netidhere@illinois.edu", 
            role = c("aut", "cph"))
     )
-Description: Amazing statistical computations are being undertaken.
+Description: Estimation and Inference for High Dimensional Median Analysis.
 Depends: R (>= 3.5.0)
 Imports: stats, scalreg, lars
 License: GPL (>= 2)
