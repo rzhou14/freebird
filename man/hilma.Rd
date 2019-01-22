@@ -37,7 +37,13 @@ A list of class \code{hilma}:
 The function ‘hilma’ implements the estimation and inference for indirect effect in high dimensional linear mediation analysis models. It gives estimates and p-values under both incomplete mediation, where a direct effect may exist, as well as complete mediation, where the direct effect is known to be absent.
 }
 \examples{
-# c.f. test_data.R file
+n = 30
+p = 50
+q = 2
+G = mvrnorm(n, rep(0,p), diag(p))
+S = as.matrix(mvrnorm(n, rep(0,q), diag(q)))
+Y = as.matrix(rnorm(n))
+out = hilma(Y,G,S, mediation_setting = 'complete', tuning_method = 'uniform', lam_list = 0.2)
 }
 \author{
 Ruixuan Zhou

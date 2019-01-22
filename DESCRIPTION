@@ -1,11 +1,15 @@
 Package: freebird
 Title: Estimation and Inference for High Dimensional Median Analysis
 Version: 0.0.1
-Author: Ruixuan Zhou and Dave Zhao
-Maintainer: Ruixuan Zhou <rzhou14@illinois.edu>
+Authors@R: c(
+    person("Ruixuan", "Zhou", email = "rzhou14@illinois.edu", 
+           role = c("aut", "cre", "cph")),
+    person("Dave", "Zhao", email = "rzhou14@illinois.edu", 
+           role = c("aut", "cph"))
+    )
 Description: Estimation and Inference for High Dimensional Median Analysis.
-Depends: R (>= 3.5.0)
-Imports: stats, lars, scalreg
+Depends: R (>= 3.5.0), scalreg
+Imports: stats
 License: GPL (>= 2)
 LazyData: true
 RoxygenNote: 6.1.1

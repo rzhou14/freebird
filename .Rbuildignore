@@ -1,4 +1,5 @@
+^README\.Rmd$
 ^\.travis\.yml$
-^ihmm\.Rproj$
+^freebird\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE$
