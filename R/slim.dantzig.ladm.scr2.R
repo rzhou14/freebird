@@ -39,7 +39,7 @@ slim.dantzig.ladm.scr2 <- function(Y, X, lambda, nlambda, n, d, maxdf, rho, max.
          as.integer(ite.int), as.integer(ite.int1), as.integer(num.scr1),
          as.integer(idx.scr), as.integer(idx.scr1), as.double(gamma), as.double(lambda),
          as.integer(nlambda), as.integer(max.ite), as.double(prec),
-         as.integer(intcep),PACKAGE="ihmm")
+         as.integer(intcep),PACKAGE="freebird")
   runt = Sys.time() - begt
   beta.list = vector("list", nlambda)
   for(i in 1:nlambda){
