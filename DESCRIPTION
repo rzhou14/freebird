@@ -8,8 +8,8 @@ Authors@R: c(
            role = c("aut", "cph"))
     )
 Description: Estimation and Inference for High Dimensional Median Analysis.
-Depends: R (>= 3.5.0)
-Imports: stats, lars, scalreg
+Depends: R (>= 3.5.0), scalreg
+Imports: stats
 License: GPL (>= 2)
 LazyData: true
 RoxygenNote: 6.1.1
