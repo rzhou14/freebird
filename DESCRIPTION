@@ -2,8 +2,11 @@ Package: freebird
 Title: Estimation and Inference for High Dimensional Median Analysis
 Version: 0.0.1
 Authors@R: c(
-    person("Ruixuan", "Zhou", email = "rzhou14@illinois.edu", role = c("aut", "cre", "cph")),
-    person("Dave", "Zhao", email = "rzhou14@illinois.edu", role = c("aut", "cph")) )
+    person("Ruixuan", "Zhou", email = "rzhou14@illinois.edu", 
+           role = c("aut", "cre", "cph")),
+    person("Dave", "Zhao", email = "sdzhao@illinois.edu", 
+           role = c("aut", "cph"))
+    )
 Description: Estimation and Inference for High Dimensional Median Analysis.
 Depends: R (>= 3.5.0)
 Imports: stats, lars, scalreg
