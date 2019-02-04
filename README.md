@@ -14,8 +14,8 @@ status](https://codecov.io/gh/rzhou14/freebird/branch/master/graph/badge.svg)](h
 
 # freebird
 
-The goal of `freebird` is to estimation and perform inference for High
-Dimensional Median Analysis.
+The goal of `freebird` is to do estimation and perform inference for High
+Dimensional Mediation Analysis.
 
 ## Installation
 
