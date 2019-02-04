@@ -14,8 +14,8 @@ status](https://codecov.io/gh/rzhou14/freebird/branch/master/graph/badge.svg)](h
 
 # freebird
 
-The goal of `freebird` is to do estimation and perform inference for High
-Dimensional Mediation Analysis.
+The goal of `freebird` is to do estimation and perform inference for
+High Dimensional Mediation Analysis.
 
 ## Installation
 
@@ -43,6 +43,10 @@ To use `freebird`, please load the package with:
 
 ``` r
 library("freebird")
+#> Loading required package: scalreg
+#> Loading required package: lars
+#> Loaded lars 1.2
+#> Loading required package: MASS
 ```
 
 ## Authors

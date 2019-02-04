@@ -28,7 +28,7 @@ knitr::opts_chunk$set(
 
 The goal of `freebird` is to do estimation and perform inference for High Dimensional Mediation Analysis.
 
-## Installation
+## Installation 
 
 If you have a compiler installed on your computer, then you can install the development version
 of freebird from GitHub by using:
