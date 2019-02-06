@@ -9,7 +9,7 @@ Authors@R: c(
     )
 Description: Estimation and Inference for High Dimensional Median Analysis.
 Depends: R (>= 3.5.0), scalreg
-Imports: stats
+Imports: stats, MASS
 License: GPL (>= 2)
 LazyData: true
 RoxygenNote: 6.1.1

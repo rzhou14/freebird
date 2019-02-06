@@ -25,12 +25,13 @@
 #' @export
 #' @importFrom stats lm pnorm
 #' @importFrom scalreg scalreg
+#' @importFrom MASS mvrnorm
 #' @examples
 #' n = 30
 #' p = 50
 #' q = 2
-#' G = mvrnorm(n, rep(0,p), diag(p))
-#' S = as.matrix(mvrnorm(n, rep(0,q), diag(q)))
+#' G = MASS::mvrnorm(n, rep(0,p), diag(p))
+#' S = as.matrix(MASS::mvrnorm(n, rep(0,q), diag(q)))
 #' Y = as.matrix(rnorm(n))
 #' out = hilma(Y,G,S, mediation_setting = 'complete', tuning_method = 'uniform', lam_list = 0.2)
 hilma <- function(Y, G, S, mediation_setting = 'incomplete', tuning_method = 'aic', lam_list = NA,

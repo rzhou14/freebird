@@ -40,8 +40,8 @@ The function ‘hilma’ implements the estimation and inference for indirect ef
 n = 30
 p = 50
 q = 2
-G = mvrnorm(n, rep(0,p), diag(p))
-S = as.matrix(mvrnorm(n, rep(0,q), diag(q)))
+G = MASS::mvrnorm(n, rep(0,p), diag(p))
+S = as.matrix(MASS::mvrnorm(n, rep(0,q), diag(q)))
 Y = as.matrix(rnorm(n))
 out = hilma(Y,G,S, mediation_setting = 'complete', tuning_method = 'uniform', lam_list = 0.2)
 }
