@@ -1,4 +1,4 @@
-#' Estimation and Inference for High Dimensional Median Analysis
+#' Estimation and Inference for High Dimensional Mediation Analysis
 #'
 #' The function ‘hilma’ implements the estimation and inference for indirect effect in high dimensional linear mediation analysis models. It gives estimates and p-values under both incomplete mediation, where a direct effect may exist, as well as complete mediation, where the direct effect is known to be absent.
 #'
