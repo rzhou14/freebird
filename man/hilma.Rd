@@ -2,7 +2,7 @@
 % Please edit documentation in R/hilma.R
 \name{hilma}
 \alias{hilma}
-\title{Estimation and Inference for High Dimensional Median Analysis}
+\title{Estimation and Inference for High Dimensional Mediation Analysis}
 \usage{
 hilma(Y, G, S, mediation_setting = "incomplete", tuning_method = "aic",
   lam_list = NA, min.ratio = 0.1, n.lambda = 5, center = TRUE)

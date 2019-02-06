@@ -4,9 +4,9 @@
 \name{freebird-package}
 \alias{freebird-package}
 \alias{_PACKAGE}
-\title{freebird: Estimation and Inference for High Dimensional Median Analysis}
+\title{freebird: Estimation and Inference for High Dimensional Mediation Analysis}
 \description{
-Estimation and Inference for High Dimensional Median Analysis.
+Estimation and Inference for High Dimensional Mediation Analysis.
 }
 \author{
 \strong{Maintainer}: Ruixuan Zhou \email{rzhou14@illinois.edu} [copyright holder]
