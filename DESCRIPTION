@@ -7,7 +7,7 @@ Authors@R: c(
     person("Dave", "Zhao", email = "rzhou14@illinois.edu", 
            role = c("aut", "cph"))
     )
-Description: Estimation and Inference for High Dimensional Median Analysis.
+Description: Estimation and Inference for High Dimensional Mediation Analysis.
 Depends: R (>= 3.5.0), scalreg
 Imports: stats, MASS
 License: GPL (>= 2)
