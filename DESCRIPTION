@@ -1,5 +1,5 @@
 Package: freebird
-Title: Estimation and Inference for High Dimensional Median Analysis
+Title: Estimation and Inference for High Dimensional Mediation Analysis
 Version: 0.0.1
 Authors@R: c(
     person("Ruixuan", "Zhou", email = "rzhou14@illinois.edu", 
