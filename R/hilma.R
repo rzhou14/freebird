@@ -6,7 +6,7 @@
 #' @param G The n by p mediator matrix. p can be larger than n.
 #' @param S The n by q exposure matrix. q can be 1, and q < n is required.
 #' @param mediation_setting Either 'incomplete' or 'complete'
-#' @param tuning_method  'aic' or 'uniform', the default is 'aic'
+#' @param tuning_method  'uniform' or 'aic', the default is 'uniform'
 #' @param lam_list list of tuning parameter for aic tuning
 #' @param min.ratio the ratio of the minimum lambda to the maximum
 #' @param n.lambda number of tuning parameters to choose from
@@ -34,7 +34,7 @@
 #' S = as.matrix(MASS::mvrnorm(n, rep(0,q), diag(q)))
 #' Y = as.matrix(rnorm(n))
 #' out = hilma(Y,G,S, mediation_setting = 'complete', tuning_method = 'uniform', lam_list = 0.2)
-hilma <- function(Y, G, S, mediation_setting = 'incomplete', tuning_method = 'aic', lam_list = NA,
+hilma <- function(Y, G, S, mediation_setting = 'incomplete', tuning_method = 'uniform', lam_list = NA,
                        min.ratio = 0.1, n.lambda = 5, center = TRUE) {
 
 
@@ -86,7 +86,9 @@ hilma <- function(Y, G, S, mediation_setting = 'incomplete', tuning_method = 'ai
       Beta.list[[qj]] = outj$beta
     }
 
-    if (is.na(lam_list)) lam_list = outj$lambda
+    if (is.na(lam_list)) {
+      if (tuning_method == 'uniform') lam_list = sqrt(log(p)/n)/3 else lam_list = outj$lambda
+    }
 
     Omegahat.list = list()
     CV = CV1 = CV2 = rep(0,length(lam_list))
