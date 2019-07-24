@@ -19,7 +19,7 @@ hilma(Y, G, S, mediation_setting = "incomplete",
 
 \item{tuning_method}{'uniform' or 'aic', the default is 'uniform'}
 
-\item{lam_list}{list of tuning parameter for aic tuning}
+\item{lam_list}{tuning parameter for uniform tuning or list of tuning parameter for aic tuning}
 
 \item{min.ratio}{the ratio of the minimum lambda to the maximum}
 

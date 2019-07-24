@@ -7,7 +7,7 @@
 #' @param S The n by q exposure matrix. q can be 1, and q < n is required.
 #' @param mediation_setting Either 'incomplete' or 'complete'
 #' @param tuning_method  'uniform' or 'aic', the default is 'uniform'
-#' @param lam_list list of tuning parameter for aic tuning
+#' @param lam_list tuning parameter for uniform tuning or list of tuning parameter for aic tuning
 #' @param min.ratio the ratio of the minimum lambda to the maximum
 #' @param n.lambda number of tuning parameters to choose from
 #' @param center center the data or not, the default is TRUE
