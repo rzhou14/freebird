@@ -22,6 +22,7 @@
 #' Ruixuan Zhou
 #'
 #' @export
+#' 
 #' @importFrom stats lm cov sd
 #' @importFrom scalreg scalreg
 #' @importFrom Rmosek mosek
