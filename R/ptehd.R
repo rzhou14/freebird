@@ -14,6 +14,7 @@
 #' \item{sd_id}{Standard deviation of indirect effect estimate}
 #' \item{est_total}{Estimate of total effect}
 #' \item{sd_total}{Standard deviation of total effect estimate}
+#' \item{V}{Covariance matrix of (est_id, est_total)}
 #' \item{est_R}{Estimate of proportion of treatment effect explained by surrogates}
 #' \item{sd_R}{Standard deviation of proportion estimate}
 #' }
@@ -78,14 +79,14 @@ ptehd <- function(Yt, Yc, St, Sc, lambda_range = c(0, 1)) {
     ## calculate effect estimates and sd estimates
     est_id = Omega_hat %*% t(St_tilde) %*% (Yt_tilde - St_tilde %*% betastar_hat) / nt + alpha1_hat %*% betastar_hat
     est_total = mean(Yt) - mean(Yc)
-    
+        
     var_total = sigmat_hat^2 / nt + sigmac_hat^2 / nc
-    
+        
     sigmat2_hat = sqrt(max(0, sigmat_hat^2 - sigmat1_hat^2))
     sigmac2_hat = sqrt(max(0, sigmac_hat^2 - sigmac1_hat^2))
         
-    var_id = ( sigmat2_hat^2 + t(betastar_hat) %*% Sigmasc_hat %*% betastar_hat + sigmat1_hat^2 * Omega_hat %*% Sigmast_hat %*% t(Omega_hat)) / nt
-    cov_did = ( sigmat2_hat^2 + t(beta1_hat) %*% Sigmasc_hat %*% betastar_hat) / nt
+    var_id = ( sigmat2_hat^2 + sigmat1_hat^2 * Omega_hat %*% Sigmast_hat %*% t(Omega_hat)) / nt + sigmac2_hat^2 / nc
+    cov_did = sigmat2_hat^2 / nt + t(beta1_hat) %*% Sigmasc_hat %*% betastar_hat / nc
     
     sd_id = sqrt(var_id)
     
@@ -103,6 +104,7 @@ ptehd <- function(Yt, Yc, St, Sc, lambda_range = c(0, 1)) {
                        sd_id = sd_id,
                        est_total = est_total,
                        sd_total = sd_total,
+                       V = W,
                        est_R = est_R,
                        sd_R = sd_R,
                        lambda_used = out.omega$lambda_used))
