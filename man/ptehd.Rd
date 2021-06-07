@@ -24,6 +24,7 @@ A list with components
 \item{sd_id}{Standard deviation of indirect effect estimate}
 \item{est_total}{Estimate of total effect}
 \item{sd_total}{Standard deviation of total effect estimate}
+\item{V}{Covariance matrix of (est_id, est_total)}
 \item{est_R}{Estimate of proportion of treatment effect explained by surrogates}
 \item{sd_R}{Standard deviation of proportion estimate}
 }

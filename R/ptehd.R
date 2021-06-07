@@ -84,9 +84,12 @@ ptehd <- function(Yt, Yc, St, Sc, lambda_range = c(0, 1)) {
         
     sigmat2_hat = sqrt(max(0, sigmat_hat^2 - sigmat1_hat^2))
     sigmac2_hat = sqrt(max(0, sigmac_hat^2 - sigmac1_hat^2))
-        
-    var_id = ( sigmat2_hat^2 + sigmat1_hat^2 * Omega_hat %*% Sigmast_hat %*% t(Omega_hat)) / nt + sigmac2_hat^2 / nc
-    cov_did = sigmat2_hat^2 / nt + t(beta1_hat) %*% Sigmasc_hat %*% betastar_hat / nc
+
+    
+    var_id = ( sigmat2_hat^2 + sigmat1_hat^2 * Omega_hat %*% Sigmast_hat %*% t(Omega_hat)) / nt +
+        ( t(betastar_hat) %*% Sigmasc_hat %*% betastar_hat ) / nc
+    
+    cov_did = ( sigmat2_hat^2 ) / nt + ( t(beta1_hat) %*% Sigmasc_hat %*% betastar_hat) / nc
     
     sd_id = sqrt(var_id)
     
