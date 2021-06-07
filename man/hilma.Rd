@@ -4,9 +4,17 @@
 \alias{hilma}
 \title{Estimation and Inference for High Dimensional Mediation Analysis}
 \usage{
-hilma(Y, G, S, mediation_setting = "incomplete",
-  tuning_method = "uniform", lam_list = NA, min.ratio = 0.1,
-  n.lambda = 5, center = TRUE)
+hilma(
+  Y,
+  G,
+  S,
+  mediation_setting = "incomplete",
+  tuning_method = "uniform",
+  lam_list = NA,
+  min.ratio = 0.1,
+  n.lambda = 5,
+  center = TRUE
+)
 }
 \arguments{
 \item{Y}{The n-dimensional outcome vector.}
